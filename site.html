@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Para benzinho</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+            font-family: 'Georgia', serif;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background-color: #e75480;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #d6336c;
+            transform: scale(1.05);
+        }
+        .carta {
+            display: none;
+            margin-top: 30px;
+            background: white;
+            padding: 30px;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: aparecer 1s ease-in-out;
+        }
+        @keyframes aparecer {
+            from{ opacity: 0; transform: translateY(20px);} 
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="mostrarCarta()">💌 Clique aqui</button>
+        <div class="carta" id="carta">
+             <h2>Meu benzinho</h2>
+             <p> PIPIPI POPOPO POPOPOPOPOPOPOPOPO,
+                POPOPOPOPOPOPOPOPOPO
+             </p>
+             <p><i> PIPIPI, <br> PIPIPI</i></p>
+             <!--COLOQUE AS FOTOS AQUI--> 
+             <div class="fotos">
+                <img src="benzin e eu.jpeg">
+                <img src="benzin e eu .jpeg">
+                <img src="eu e benzin.jpeg">
+             </div>
+        </div>
+    </div>
+    <script>
+        function mostrarCarta() {
+            document.etElementById("carta").style.display="block";
+        }
+    </script>
+</body>
+</html>
