@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:aliceblue;
+}
+
+.outras-fotos span {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: white;
+}
+
+.outras-fotos {
+    display: flex;
+    gap: 5px;
+    width: 100px;
+}
+
+.acoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.post-topo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.foto-perfil {
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('perfil.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Centers the focal point */
+    background-repeat: no-repeat;
+}
+
+.post{
+    background-color: white;
+    height: 750px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.foto img{
+    width: 400px;
+    height:600px;
+}
